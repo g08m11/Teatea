@@ -10,10 +10,12 @@ import UIKit
 
 class TeaViewController: UIViewController {
 
+  @IBOutlet var teaView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        let teaImage = UIImage(named: "t2.jpg")
+        teaView.image = teaImage
+        self.view.addSubview(teaView)
     }
 
     override func didReceiveMemoryWarning() {

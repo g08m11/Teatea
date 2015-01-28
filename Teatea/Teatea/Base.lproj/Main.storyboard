@@ -36,6 +36,9 @@
                                     <color key="titleColor" red="0.17140799964410824" green="1" blue="0.15469842061965566" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="jMS-AX-8lY" kind="push" id="Z3z-6t-eul"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xd1-yQ-t6N">
                                 <rect key="frame" x="196" y="383" width="108" height="64"/>
@@ -81,6 +84,60 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="561" y="136"/>
+        </scene>
+        <!--Tea-->
+        <scene sceneID="jhv-uv-C6A">
+            <objects>
+                <viewController id="jMS-AX-8lY" customClass="TeaViewController" customModule="Teatea" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="376-D0-agh"/>
+                        <viewControllerLayoutGuide type="bottom" id="MXi-8b-wLH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="b0j-df-Dbx">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Recommend" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Scn-dG-SAz">
+                                <rect key="frame" x="32" y="98" width="98" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0hp-1Q-2rg">
+                                <rect key="frame" x="16" y="127" width="288" height="182"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="182" id="BDC-e3-QrQ"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xek-X9-wdo">
+                                <rect key="frame" x="105" y="395" width="111" height="66"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="BUY">
+                                    <color key="titleColor" red="0.40000000000000002" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0hp-1Q-2rg" firstAttribute="centerX" secondItem="Xek-X9-wdo" secondAttribute="centerX" id="5Pn-dC-AIj"/>
+                            <constraint firstItem="Xek-X9-wdo" firstAttribute="top" secondItem="0hp-1Q-2rg" secondAttribute="bottom" constant="86" id="NR7-sV-EQt"/>
+                            <constraint firstItem="0hp-1Q-2rg" firstAttribute="top" secondItem="Scn-dG-SAz" secondAttribute="bottom" constant="8" symbolic="YES" id="YHy-ks-MJb"/>
+                            <constraint firstItem="0hp-1Q-2rg" firstAttribute="trailing" secondItem="b0j-df-Dbx" secondAttribute="trailingMargin" id="k22-8z-rCK"/>
+                            <constraint firstItem="0hp-1Q-2rg" firstAttribute="top" secondItem="b0j-df-Dbx" secondAttribute="top" constant="127" id="xkh-Jp-zht"/>
+                            <constraint firstItem="0hp-1Q-2rg" firstAttribute="leading" secondItem="b0j-df-Dbx" secondAttribute="leadingMargin" id="yzu-a7-9UB"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Tea" id="2S9-jS-I92"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="teaView" destination="0hp-1Q-2rg" id="zHL-PH-LBz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="znr-cN-cmd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="561" y="847"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="gBr-Bf-nN8">
