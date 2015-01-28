@@ -7,8 +7,12 @@
 //
 
 import UIKit
+import Social
 
 class ZazenViewController: UIViewController {
+
+  var myComposeView : SLComposeViewController!
+  @IBOutlet var twitterButton: UIButton!
 
   //時間計測用の変数.
   var cnt : Float = 0
@@ -69,6 +73,8 @@ class ZazenViewController: UIViewController {
       sender.setTitle("Zazen Stop", forState: UIControlState.Normal)
     }
     
+    
+    
   }
   
   //NSTimerIntervalで指定された秒数毎に呼び出されるメソッド.
@@ -82,5 +88,13 @@ class ZazenViewController: UIViewController {
     myLabel.text = str
     
   }
+  @IBAction func sendTwitterButtonClick(sender: AnyObject) {
+    myComposeView = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
+    myComposeView.setInitialText("今日も座禅でゆとりを得たよ。  #Teatea")
+    self.presentViewController(myComposeView, animated: true, completion: nil)
+    
+  }
+  
+  
   
 }

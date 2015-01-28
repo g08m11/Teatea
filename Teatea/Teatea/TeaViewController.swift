@@ -7,9 +7,12 @@
 //
 
 import UIKit
-
+import Social
 class TeaViewController: UIViewController {
 
+  var myComposeView : SLComposeViewController!
+  
+  
   @IBOutlet var teaView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,7 +27,9 @@ class TeaViewController: UIViewController {
     }
     
 
-    /*
+
+  
+  /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
