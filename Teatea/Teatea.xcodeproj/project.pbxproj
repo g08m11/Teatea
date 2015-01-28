@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CFA08A0B1A792EFD00E62876 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA08A0A1A792EFD00E62876 /* AppDelegate.swift */; };
+		CFA08A0D1A792EFD00E62876 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA08A0C1A792EFD00E62876 /* ViewController.swift */; };
+		CFA08A101A792EFD00E62876 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFA08A0E1A792EFD00E62876 /* Main.storyboard */; };
+		CFA08A121A792EFD00E62876 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFA08A111A792EFD00E62876 /* Images.xcassets */; };
+		CFA08A151A792EFD00E62876 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFA08A131A792EFD00E62876 /* LaunchScreen.xib */; };
+		CFA08A211A792EFE00E62876 /* TeateaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA08A201A792EFE00E62876 /* TeateaTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CFA08A1B1A792EFD00E62876 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CFA089FD1A792EFD00E62876 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CFA08A041A792EFD00E62876;
+			remoteInfo = Teatea;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CFA08A051A792EFD00E62876 /* Teatea.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Teatea.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFA08A091A792EFD00E62876 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFA08A0A1A792EFD00E62876 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CFA08A0C1A792EFD00E62876 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CFA08A0F1A792EFD00E62876 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CFA08A111A792EFD00E62876 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CFA08A141A792EFD00E62876 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		CFA08A1A1A792EFD00E62876 /* TeateaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TeateaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFA08A1F1A792EFD00E62876 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFA08A201A792EFE00E62876 /* TeateaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeateaTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CFA08A021A792EFD00E62876 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFA08A171A792EFD00E62876 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CFA089FC1A792EFD00E62876 = {
+			isa = PBXGroup;
+			children = (
+				CFA08A071A792EFD00E62876 /* Teatea */,
+				CFA08A1D1A792EFD00E62876 /* TeateaTests */,
+				CFA08A061A792EFD00E62876 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CFA08A061A792EFD00E62876 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CFA08A051A792EFD00E62876 /* Teatea.app */,
+				CFA08A1A1A792EFD00E62876 /* TeateaTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CFA08A071A792EFD00E62876 /* Teatea */ = {
+			isa = PBXGroup;
+			children = (
+				CFA08A0A1A792EFD00E62876 /* AppDelegate.swift */,
+				CFA08A0C1A792EFD00E62876 /* ViewController.swift */,
+				CFA08A0E1A792EFD00E62876 /* Main.storyboard */,
+				CFA08A111A792EFD00E62876 /* Images.xcassets */,
+				CFA08A131A792EFD00E62876 /* LaunchScreen.xib */,
+				CFA08A081A792EFD00E62876 /* Supporting Files */,
+			);
+			path = Teatea;
+			sourceTree = "<group>";
+		};
+		CFA08A081A792EFD00E62876 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CFA08A091A792EFD00E62876 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CFA08A1D1A792EFD00E62876 /* TeateaTests */ = {
+			isa = PBXGroup;
+			children = (
+				CFA08A201A792EFE00E62876 /* TeateaTests.swift */,
+				CFA08A1E1A792EFD00E62876 /* Supporting Files */,
+			);
+			path = TeateaTests;
+			sourceTree = "<group>";
+		};
+		CFA08A1E1A792EFD00E62876 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CFA08A1F1A792EFD00E62876 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CFA08A041A792EFD00E62876 /* Teatea */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFA08A241A792EFE00E62876 /* Build configuration list for PBXNativeTarget "Teatea" */;
+			buildPhases = (
+				CFA08A011A792EFD00E62876 /* Sources */,
+				CFA08A021A792EFD00E62876 /* Frameworks */,
+				CFA08A031A792EFD00E62876 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Teatea;
+			productName = Teatea;
+			productReference = CFA08A051A792EFD00E62876 /* Teatea.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CFA08A191A792EFD00E62876 /* TeateaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFA08A271A792EFE00E62876 /* Build configuration list for PBXNativeTarget "TeateaTests" */;
+			buildPhases = (
+				CFA08A161A792EFD00E62876 /* Sources */,
+				CFA08A171A792EFD00E62876 /* Frameworks */,
+				CFA08A181A792EFD00E62876 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CFA08A1C1A792EFD00E62876 /* PBXTargetDependency */,
+			);
+			name = TeateaTests;
+			productName = TeateaTests;
+			productReference = CFA08A1A1A792EFD00E62876 /* TeateaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CFA089FD1A792EFD00E62876 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = Bloc;
+				TargetAttributes = {
+					CFA08A041A792EFD00E62876 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					CFA08A191A792EFD00E62876 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = CFA08A041A792EFD00E62876;
+					};
+				};
+			};
+			buildConfigurationList = CFA08A001A792EFD00E62876 /* Build configuration list for PBXProject "Teatea" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CFA089FC1A792EFD00E62876;
+			productRefGroup = CFA08A061A792EFD00E62876 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CFA08A041A792EFD00E62876 /* Teatea */,
+				CFA08A191A792EFD00E62876 /* TeateaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CFA08A031A792EFD00E62876 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFA08A101A792EFD00E62876 /* Main.storyboard in Resources */,
+				CFA08A151A792EFD00E62876 /* LaunchScreen.xib in Resources */,
+				CFA08A121A792EFD00E62876 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFA08A181A792EFD00E62876 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CFA08A011A792EFD00E62876 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFA08A0D1A792EFD00E62876 /* ViewController.swift in Sources */,
+				CFA08A0B1A792EFD00E62876 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFA08A161A792EFD00E62876 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFA08A211A792EFE00E62876 /* TeateaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CFA08A1C1A792EFD00E62876 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CFA08A041A792EFD00E62876 /* Teatea */;
+			targetProxy = CFA08A1B1A792EFD00E62876 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CFA08A0E1A792EFD00E62876 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CFA08A0F1A792EFD00E62876 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CFA08A131A792EFD00E62876 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CFA08A141A792EFD00E62876 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CFA08A221A792EFE00E62876 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CFA08A231A792EFE00E62876 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CFA08A251A792EFE00E62876 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Teatea/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CFA08A261A792EFE00E62876 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Teatea/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CFA08A281A792EFE00E62876 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TeateaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Teatea.app/Teatea";
+			};
+			name = Debug;
+		};
+		CFA08A291A792EFE00E62876 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TeateaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Teatea.app/Teatea";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CFA08A001A792EFD00E62876 /* Build configuration list for PBXProject "Teatea" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFA08A221A792EFE00E62876 /* Debug */,
+				CFA08A231A792EFE00E62876 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFA08A241A792EFE00E62876 /* Build configuration list for PBXNativeTarget "Teatea" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFA08A251A792EFE00E62876 /* Debug */,
+				CFA08A261A792EFE00E62876 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CFA08A271A792EFE00E62876 /* Build configuration list for PBXNativeTarget "TeateaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFA08A281A792EFE00E62876 /* Debug */,
+				CFA08A291A792EFE00E62876 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CFA089FD1A792EFD00E62876 /* Project object */;
+}
