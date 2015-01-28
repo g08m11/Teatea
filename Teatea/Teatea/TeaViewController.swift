@@ -12,6 +12,7 @@ class TeaViewController: UIViewController {
 
   var myComposeView : SLComposeViewController!
   
+  @IBOutlet var twitterButton: UIButton!
   
   @IBOutlet var teaView: UIImageView!
     override func viewDidLoad() {
@@ -38,5 +39,11 @@ class TeaViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+  @IBAction func sendTwitterButtonClick(sender: AnyObject) {
+    myComposeView = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
+    myComposeView.setInitialText("今日もお茶でゆとりを得たよ  #Teatea")
+    self.presentViewController(myComposeView, animated: true, completion: nil)
+  }
+
 
 }

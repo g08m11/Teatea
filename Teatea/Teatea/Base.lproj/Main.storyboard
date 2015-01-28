@@ -127,6 +127,9 @@
                                 <state key="normal" title="twitter">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="sendTwitterButtonClick:" destination="jMS-AX-8lY" eventType="touchDown" id="9sQ-8b-z8E"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -147,6 +150,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="teaView" destination="0hp-1Q-2rg" id="zHL-PH-LBz"/>
+                        <outlet property="twitterButton" destination="Tik-yN-Tdj" id="Z9r-ON-9g6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="znr-cN-cmd" userLabel="First Responder" sceneMemberID="firstResponder"/>
