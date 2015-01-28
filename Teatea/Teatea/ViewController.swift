@@ -10,9 +10,14 @@ import UIKit
 
 class ViewController: UIViewController {
 
+  @IBOutlet var weatherView: UIImageView!
+  
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view, typically from a nib.
+
+    let weatherImage = UIImage(named: "t1.jpg")
+    weatherView.image = weatherImage
+    self.view.addSubview(weatherView)
   }
 
   override func didReceiveMemoryWarning() {

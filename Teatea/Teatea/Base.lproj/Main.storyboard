@@ -1,25 +1,127 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="QcW-xd-cGY">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--TOP-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Teatea" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="C5F-5h-Fpr">
+                                <rect key="frame" x="0.0" y="64" width="320" height="194"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="194" id="VLd-D8-qd3"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lFW-m5-oo1">
+                                <rect key="frame" x="28" y="383" width="108" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="108" id="A3B-Ad-Zsi"/>
+                                    <constraint firstAttribute="height" constant="64" id="goj-pR-5aa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="Tea">
+                                    <color key="titleColor" red="0.17140799964410824" green="1" blue="0.15469842061965566" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xd1-yQ-t6N">
+                                <rect key="frame" x="196" y="383" width="108" height="64"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="Zazen">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="WBs-vd-V4h" kind="push" id="64R-BA-IjW"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tokyo 10℃ fine" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dPq-GX-I9a">
+                                <rect key="frame" x="183" y="297" width="121" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Xd1-yQ-t6N" firstAttribute="leading" secondItem="lFW-m5-oo1" secondAttribute="trailing" constant="60" id="3uQ-tD-ug9"/>
+                            <constraint firstItem="dPq-GX-I9a" firstAttribute="top" secondItem="C5F-5h-Fpr" secondAttribute="bottom" constant="39" id="8KQ-ZH-9yy"/>
+                            <constraint firstItem="C5F-5h-Fpr" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="9wt-sp-Zuh"/>
+                            <constraint firstItem="dPq-GX-I9a" firstAttribute="trailing" secondItem="Xd1-yQ-t6N" secondAttribute="trailing" id="Cwa-si-gqF"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="lFW-m5-oo1" secondAttribute="bottom" constant="121" id="UwT-E7-wpS"/>
+                            <constraint firstAttribute="trailing" secondItem="C5F-5h-Fpr" secondAttribute="trailing" id="VQ2-s9-Coq"/>
+                            <constraint firstItem="C5F-5h-Fpr" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="Ztu-cN-EAl"/>
+                            <constraint firstItem="lFW-m5-oo1" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="12" id="bI3-cr-AkO"/>
+                            <constraint firstItem="dPq-GX-I9a" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="ecu-Tq-rvW"/>
+                            <constraint firstItem="lFW-m5-oo1" firstAttribute="baseline" secondItem="Xd1-yQ-t6N" secondAttribute="firstBaseline" id="kN4-0h-oiw"/>
+                            <constraint firstItem="lFW-m5-oo1" firstAttribute="top" secondItem="Xd1-yQ-t6N" secondAttribute="top" id="lwb-Tk-xRa"/>
+                            <constraint firstItem="lFW-m5-oo1" firstAttribute="firstBaseline" secondItem="Xd1-yQ-t6N" secondAttribute="baseline" id="u1H-c7-2Rl"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="TOP" id="CN1-lD-1R2"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="weatherView" destination="C5F-5h-Fpr" id="mCc-AH-DZa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="561" y="136"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="gBr-Bf-nN8">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QcW-xd-cGY" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Azd-yC-sNu">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="sw0-ff-UgG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ihY-vq-9b7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="57" y="136"/>
+        </scene>
+        <!--Zazen-->
+        <scene sceneID="ymM-mm-HOi">
+            <objects>
+                <viewController id="WBs-vd-V4h" customClass="ZazenViewController" customModule="Teatea" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uQ9-Zf-j8C"/>
+                        <viewControllerLayoutGuide type="bottom" id="bUW-hJ-pUa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="08r-qh-HOb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Zazen" id="8b1-Dy-fZt"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pU9-Qe-ZYt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1105" y="136"/>
         </scene>
     </scenes>
 </document>
