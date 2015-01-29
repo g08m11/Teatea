@@ -1,3 +1,6 @@
+![t1.gif](https://qiita-image-store.s3.amazonaws.com/0/15812/2ab54648-f24b-1e45-57ad-3fcce696565e.gif)
+
+
 # Teatea
 座禅とお茶を飲む機会を増やすことをコンセプトにしたアプリです。
 
