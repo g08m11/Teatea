@@ -2,7 +2,7 @@
 //  ZazenViewController.swift
 //  Teatea
 //
-//  Created by 具志堅 雅 on 2015/01/29.
+//  Created by g08m11 on 2015/01/29.
 //  Copyright (c) 2015年 Bloc. All rights reserved.
 //
 
@@ -14,18 +14,14 @@ class ZazenViewController: UIViewController {
   var myComposeView : SLComposeViewController!
   @IBOutlet var twitterButton: UIButton!
 
-  //時間計測用の変数.
   var cnt : Float = 0
   
-  //時間表示用のラベル.
   var myLabel : UILabel!
   
-  //タイマー.
   var timer : NSTimer!
   
   override func viewDidLoad() {
     
-    //ラベルを作る.
     myLabel = UILabel(frame: CGRectMake(0,0,200,50))
     myLabel.backgroundColor = UIColor.grayColor()
     myLabel.layer.masksToBounds = true
@@ -38,7 +34,6 @@ class ZazenViewController: UIViewController {
     self.view.backgroundColor = UIColor.whiteColor()
     self.view.addSubview(myLabel)
     
-    //タイマー停止ボタンを作る.
     let myButton = UIButton(frame: CGRectMake(0, 0, 200, 50))
     myButton.layer.masksToBounds = true
     myButton.layer.cornerRadius = 20.0
@@ -48,7 +43,6 @@ class ZazenViewController: UIViewController {
     myButton.addTarget(self, action: "onMyButtonClick:", forControlEvents: UIControlEvents.TouchUpInside)
     self.view.addSubview(myButton)
     
-    //タイマーを作る.
     timer = NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: "onUpdate:", userInfo: nil, repeats: true)
   }
   
@@ -58,10 +52,8 @@ class ZazenViewController: UIViewController {
     //timerが動いてるなら.
     if timer.valid == true {
       
-      //timerを破棄する.
       timer.invalidate()
       
-      //ボタンのタイトル変更.
       sender.setTitle("Zazen Start", forState: UIControlState.Normal)
     }
     else{
@@ -82,7 +74,6 @@ class ZazenViewController: UIViewController {
     
     cnt += 0.1
     
-    //桁数を指定して文字列を作る.
     let str = "Time:".stringByAppendingFormat("%.1f",cnt)
     
     myLabel.text = str
